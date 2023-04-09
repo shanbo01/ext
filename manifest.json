@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "IP Reputation",
+  "version": "3.0",
+  "description": "IP Reputation Checker",
+  "icons": {
+    "512": "icon51.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}

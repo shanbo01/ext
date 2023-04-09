@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Reputation</title>
+    <style>
+      /* Style for the input and submit button */
+      input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      button[type="submit"] {
+        background-color: #2a37c9;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: Arial, sans-serif;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #2a37c9;
+      }
+
+      /* Style for the header */
+      .header {
+        background-color: #2a37c9;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Style for the error message */
+      .error-message {
+        font-weight: bold;
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Style for the popup */
+      .popup {
+        width: 350px;
+        background-color: #2a37c9;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: Arial, sans-serif;
+        }
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="popup">IP Reputation</div>
+    <form>
+      <label for="input">Enter a domain or IP address:</label>
+      <input type="text" id="input" placeholder="example.com or 192.168.0.1" />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <div id="error-message" class="error-message"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
